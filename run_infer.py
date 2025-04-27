@@ -25,7 +25,7 @@ ip_adapter_path = 'ckpt/instantcharacter_ip-adapter.bin'
 base_model = 'black-forest-labs/FLUX.1-dev'
 image_encoder_path = 'google/siglip-so400m-patch14-384'
 image_encoder_2_path = 'facebook/dinov2-giant'
-# load mllm captopn model
+# load mllm caption model
 image_analyzer = ImageAnalyzer_JoyCaption()
 
 pipe = InstantCharacterFluxPipeline.from_pretrained(base_model, torch_dtype=torch.bfloat16)
